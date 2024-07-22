@@ -10,7 +10,7 @@ import { PostagemModule } from './postagem/postagem.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'root',
+      password: '.753159Tata.',
       database: 'db_blogpessoal',
       entities: [Postagem],
       synchronize: true,
