@@ -90,7 +90,6 @@ export class PostagemService {
 
     return await this.postagemRepository.save(postagem);
 
-
   }
 
   async delete(id: number): Promise<DeleteResult> {
