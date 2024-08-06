@@ -29,13 +29,13 @@ export class PostagemController {
          return this.postagemService.findByTitulo(titulo);
      }
 
-     @Post()
+     @Post('/cadastrar')
      @HttpCode(HttpStatus.CREATED) // Http Status 201
      create(@Body() postagem: Postagem): Promise<Postagem> {
          return this.postagemService.create(postagem);
      }
 
-     @Put()
+     @Put('/atualizar')
      @HttpCode(HttpStatus.OK) // Http Status 200
      update(@Body() postagem: Postagem): Promise<Postagem> {
          return this.postagemService.update(postagem);

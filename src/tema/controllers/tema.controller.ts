@@ -29,13 +29,13 @@ export class TemaController {
     return this.temaService.findByDescricao(descricao);
   }
 
-  @Post()
+  @Post('/cadastrar')
   @HttpCode(HttpStatus.CREATED)
   create(@Body() Tema: Tema): Promise<Tema> {
     return this.temaService.create(Tema);
   }
 
-  @Put()
+  @Put('/atualizar')
   @HttpCode(HttpStatus.OK)
   update(@Body() Tema: Tema): Promise<Tema> {
     return this.temaService.update(Tema);
